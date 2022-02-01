@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <title>FAST L I S T</title>
+  <meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">myLIST</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/mealplan.html">Create Shopping List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/recipes.html">Your Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/list.html">Your List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link-login" href="#"> </a>
+              </li>
+            <li class="nav-item">
+                <button class="nav-button-user">DB</button>    
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  
+    
+    <div class="shopping-list">
+        <div class="sl-h1">
+            <h1>Select the recipes you want to cook during the week</h1>
+        </div>
+
+        <div class="selected-recipes">
+            <div class="container-head">
+                <h2> Selected Recipes</h2>
+                <ul class="selected-container">
+
+                
+                <li class="selected-recipe" id="1">
+                    <div class="delete-button">
+                        <button>x</button>
+                    </div>
+                    <div class="selected-recipe-details">
+                        
+                        <div class="selected-recipe-description">
+                            <p>Green Salad</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="selected-recipe" id="2">
+                    <div class="delete-button">
+                        <button>x</button>
+                    </div>
+                    <div class="selected-recipe-details">
+                        
+                        <div class="selected-recipe-description">
+                            <p>French Toast</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="selected-recipe" id="phone">
+                    <div class="delete-button">
+                        <button>x</button>
+                    </div>
+                    <div class="selected-recipe-details">
+                        
+                        <div class="selected-recipe-description">
+                            <p>Strawberry Cake</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="selected-recipe" id="tablet">
+                    <div class="delete-button">
+                        <button>x</button>
+                    </div>
+                    <div class="selected-recipe-details">
+                        
+                        <div class="selected-recipe-description">
+                            <p>Orange Chicken</p>
+                        </div>
+                    </div>
+                </li>
+        
+    
+                <li class="selected-arrow" id="tablet">
+                    
+                </li>
+            </ul>
+            <div class="create-list">
+                <button>  Create Shopping List</button>
+            </div>
+            </div>
+
+        </div>
+        <div class="sl-h1">
+            <h1>Recipes</h1>
+            <p>Click to add any recipe to your selected recipes or add new recipe<button class="new-recipe-button">+ add new recipe</button></p>
+            
+        </div>
+        <div class="recipe-container">
+            <div class="container-head">
+                <h2>Favorites</h2>
+            </div>
+            <div class="container">
+                <li class="recipe">
+                    <div class="plus-button">
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details">
+                        <div class="recipe-picture">
+                            <img src="/images/frenchtoast.PNG">
+                        </div>
+                        <div class="recipe-description">
+                            <p>French Toast</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="recipe">
+                    <div class="plus-button">
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details" >
+                        <div class="recipe-picture">
+                            <img src="/images/pasta.PNG">
+                        </div>
+                        <div class="recipe-description" >
+                            <p>Pasta Salad</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="recipe">
+                    <div class="plus-button" id="phone">
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details" id="phone">
+                        <div class="recipe-picture">
+                            <img src="/images/pizza.PNG">
+                        </div>
+                        <div class="recipe-description">
+                            <p>Pizza</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="recipe">
+                    <div class="plus-button" id="tablet">
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details" id="tablet">
+                        <div class="recipe-picture">
+                            <img src="/images/pancakes.PNG">
+                        </div>
+                        <div class="recipe-description">
+                            <p>Pancakes</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="arrow"id="tablet"></li>
+
+            </div>
+
+        </div>
+        <div class="recipe-container">
+            <div class="container-head">
+                <h2>It's been a while..</h2>
+            </div>
+            <div class="container">
+                <li class="recipe">
+                    <div class="plus-button">
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details">
+                        <div class="recipe-picture">
+                            <img src="/images/pizza.PNG">
+                        </div>
+                        <div class="recipe-description">
+                            <p>Pizza</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="recipe">
+                    <div class="plus-button">
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details">
+                        <div class="recipe-picture">
+                            <img src="/images/stirfry.PNG">
+                        </div>
+                        <div class="recipe-description">
+                            <p>Chef Salad</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="recipe">
+                    <div class="plus-button" id="phone">
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details" id="phone">
+                        <div class="recipe-picture">
+                            <img src="/images/cake.PNG">
+                        </div>
+                        <div class="recipe-description">
+                            <p>Strawberry Cake</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="recipe">
+                    <div class="plus-button" id="tablet">
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details" id="tablet">
+                        <div class="recipe-picture">
+                            <img src="/images/frenchtoast.PNG">
+                        </div>
+                        <div class="recipe-description">
+                            <p>French Toast</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="arrow" id="tablet"></li>
+
+            </div>
+
+        </div>
+        <div class="recipe-container">
+            <div class="container-head">
+                <h2>Similar Ingredients</h2>
+            </div>
+            <div class="container">
+                <li class="recipe">
+                    <div class="plus-button">
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details">
+                        <div class="recipe-picture">
+                            <img src="/images/pancakes.PNG">
+                        </div>
+                        <div class="recipe-description">
+                            <p>Pancake</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="recipe">
+                    <div class="plus-button">
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details">
+                        <div class="recipe-picture">
+                            <img src="/images/pasta.PNG">
+                        </div>
+                        <div class="recipe-description">
+                            <p>Pasta Salad</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="recipe">
+                    <div class="plus-button" id="phone">
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details" id="phone">
+                        <div class="recipe-picture">
+                            <img src="/images/stirfry.PNG">
+                        </div>
+                        <div class="recipe-description">
+                            <p>Chef Salad</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="recipe">
+                    <div class="plus-button" id="tablet"> 
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details" id="tablet">
+                        <div class="recipe-picture">
+                            <img src="/images/pizza.png">
+                        </div>
+                        <div class="recipe-description">
+                            <p>Pizza</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="arrow" id="tablet"></li>
+            </div>
+
+        </div>
+        <div class="recipe-container">
+            <div class="container-head">
+                <h2>Just Deserts</h2>
+            </div>
+            <div class="container">
+                <li class="recipe">
+                    <div class="plus-button">
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details">
+                        <div class="recipe-picture">
+                            <img src="/images/cake.PNG">
+                        </div>
+                        <div class="recipe-description">
+                            <p>Strawberry Cake</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="recipe">
+                    <div class="plus-button" >
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details">
+                        <div class="recipe-picture">
+                            <img src="/images/cake.PNG">
+                        </div>
+                        <div class="recipe-description">
+                            <p>Strawberry Cake</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="recipe">
+                    <div class="plus-button" id="phone">
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details" id="phone">
+                        <div class="recipe-picture">
+                            <img src="/images/cake.PNG">
+                        </div>
+                        <div class="recipe-description">
+                            <p>Strawberry Cake</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="recipe">
+                    <div class="plus-button" id="tablet">
+                        <button>+</button>
+                    </div>
+                    <div class="recipe-details" id="tablet">
+                        <div class="recipe-picture">
+                            <img src="/images/cake.PNG">
+                        </div>
+                        <div class="recipe-description">
+                            <p>Strawberry Cake</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="arrow" id="tablet"></li>
+            </div>
+
+        </div>
+        <div class="new-recipe">
+            <button class="new-recipe-button">+ add new recipe</button>
+        </div>
+
+
+  </div>
+  
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
